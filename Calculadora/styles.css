@@ -1,0 +1,33 @@
+.rounded-left {
+    border-top-left-radius: 15px;
+}
+
+.bg-fondo {
+    background-color: rgb(201, 201, 201);
+}
+
+.border-top-thick {
+    border-top-width: 2px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgb(222,226,230);
+    border-bottom-color: rgb(222,226,230);
+}
+
+.border-left{
+    border-bottom-left-radius: 55px;
+}
+
+.border-right{
+    border-bottom-right-radius: 55px;
+}
+
+#calculadora {
+    width: 250px;
+    height: 250px;
+}
+
+.height-button {
+    height: 500px;
+}

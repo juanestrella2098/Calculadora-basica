@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: "Pixelify Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-dark-subtle">
+    <div class="d-flex justify-content-center align-items-center flex-column vh-100">
+      <div class="row justify-content-center">
+        <div class="col-10 border border-5 border-light rounded-5 bg-fondo" id="calculadora">
+          <div class="row justify-content-center mb-3">
+            <div class="d-flex justify-content-center mb-2 mt-2">
+              Calculadorita
+            </div>
+            <div
+              class="d-flex justify-content-center border border-2 rounded-5 w-75 h-75 bg-light text-truncate"
+              id="resultado"
+            >
+               
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-3"></div>
+            <div class="col-3 border text-center rounded-left" id="resto" onclick="pintaOperacion('%')">
+              %
+            </div>
+            <div class="col-3 text-center border" id="rcuadrada" onclick="pintaOperacion('√')">√</div>
+            <div class="col-3 border text-center border-top-thick" id="exponente" onclick="pintaOperacion('e')"> e</div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-3 border text-center operar" onclick="pintaOperacion(7)">7</div>
+            <div class="col-3 border text-center operar"onclick="pintaOperacion(8)">8</div>
+            <div class="col-3 border text-center operar"onclick="pintaOperacion(9)">9</div>
+            <div class="col-3 border text-center" id="dividir" onclick="pintaOperacion('/')">/</div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-3 border text-center operar" onclick="pintaOperacion(4)">4</div>
+            <div class="col-3 border text-center operar" onclick="pintaOperacion(5)">5</div>
+            <div class="col-3 border text-center operar" onclick="pintaOperacion(6)">6</div>
+            <div class="col-3 border text-center" id="multiplicar" onclick="pintaOperacion('*')">*</div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-3 border text-center operar"onclick="pintaOperacion(1)">1</div>
+            <div class="col-3 border text-center operar" onclick="pintaOperacion(2)">2</div>
+            <div class="col-3 border text-center value="3" operar" onclick="pintaOperacion(3)">3</div>
+            <div class="col-3 border text-center" id="restar" onclick="pintaOperacion('-')">-</div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-9 border  text-center operar" onclick="pintaOperacion(0)">0</div>
+            <div class="col-3 rounded text-center" id="sumar" onclick="pintaOperacion('+')">+</div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-6 border border-left  text-center" onclick="operar()">
+              =
+            </div>
+            <div class="col-6 border border-right text-center" onclick="reset()">
+              AC
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
